@@ -1167,12 +1167,18 @@ li .full-basket-price {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  border-radius: 15px;
+  width: 692px;
+  margin: 0;
 }
+
+
 
 .catalog-taste-choise {
   font-size: 14px;
-  position: absolute;
-  top: -20px;
+
   /* line-height auto ???? */
 }
 
@@ -1201,6 +1207,9 @@ li .full-basket-price {
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid rgb(255, 255, 255);
   color: #ffffff;
+  align-self: flex-end;
+  border-radius: 15px;
+  padding: 5px 15px;
 }
 
 .catalog-filter-button:hover {
@@ -1279,6 +1288,9 @@ li .full-basket-price {
 .catalog-fat-choice-items {
   display: flex;
   list-style: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  border-radius: 15px;
 }
 
 .active-catalog {
@@ -1309,8 +1321,6 @@ li .full-basket-price {
 .catalog fieldset {
   padding: 0;
   border: none;
-  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   border-radius: 15px;
-  position: relative;
 }
