@@ -573,7 +573,7 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-align: center;
   display: inline-block;
-  
+
 }
 
 
@@ -605,6 +605,7 @@ body {
   line-height: 22px;
   display: flex; 
   justify-content: space-between;
+  
   padding: 0;
   margin: 0;
   position: relative;
@@ -1138,6 +1139,7 @@ li .full-basket-price {
 .selection-options {
   font-size: 14px;
   line-height: 16px;
+  margin: 0;
 }
 
 /*
@@ -1152,17 +1154,25 @@ li .full-basket-price {
   
 }
 
-.catalog-sort, .catalog-price, .catalog-fat-choice-items, .catalog-taste-fillers li {
+.catalog-sort, .catalog-price {
   background-color: rgba(255,255,255,0.2);
 }
+
+.catalog-taste {
+  width: 704px;
+}
+
 
 .catalog-taste-fillers {
   list-style: none;
   display: flex;
+  justify-content: space-around;
 }
 
 .catalog-taste-choise {
   font-size: 14px;
+  position: absolute;
+  top: -20px;
   /* line-height auto ???? */
 }
 
@@ -1263,10 +1273,12 @@ li .full-basket-price {
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .catalog-fat-choice-items {
   display: flex;
+  list-style: none;
 }
 
 .active-catalog {
@@ -1277,7 +1289,7 @@ li .full-basket-price {
 
 .catalog-h1 {
   padding: 0;
-  margin: 0;
+  margin-bottom: 20px;
 }
 
 .nav-contact-breadcrumbs {
@@ -1287,4 +1299,18 @@ li .full-basket-price {
   padding: 0;
   margin: 0;
 
+}
+
+.catalog-fat-choice-item {
+  display: flex;
+}
+
+
+.catalog fieldset {
+  padding: 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  border-radius: 15px;
+  position: relative;
 }
