@@ -136,6 +136,9 @@ body {
 .site-navigation-catalog {
   list-style: none;
   display: none;
+  
+  
+
 }
 
 .site-navigation-item:hover > .site-navigation-catalog {
@@ -200,24 +203,18 @@ body {
   display: none;
 }
 
-.nav-search-loupe:hover > .nav-form-search {
+.nav-search-loupe:hover + .nav-form-search {
   display: block;
-  position: absolute;
 }
+
+.nav-form-search
 
 .nav-search a:hover {
   background-color: rgba(255, 255, 255);
   background-image: url("../img/loupe-hover.svg");
+  
 }
 
-
-
-.nav-form-enter {
-  font-size: 14px;
-  line-height: 24px;
-  color: #999999;
-  display: none;
-}
 
 
 
@@ -248,14 +245,23 @@ body {
   left: -10px;
 }
 
-.nav-enter-item-img:hover > .nav-form-enter {
-  display: inline-block;
+.nav-enter-item-img:hover + .nav-form-enter {
+  display: block;
   content: " ";
+  display: inline-block;
   background-image: url("../img/entrance.svg");
   width: 21px;
   height: 19px;
-  vertical-align: middle;
-  position: absolute;
+  vertical-align: middle;  
+}
+
+
+.nav-form-enter {
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+  display: none;
+  
 }
 
 
@@ -364,14 +370,15 @@ body {
   display: block;
 }
 
+
 /* конец - Корзина catalog.html */
 .nav-contact-info {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
   width: 267px;
-  padding-left: 977px;
-  
+  justify-content: flex-end;
+
 
 }
 
@@ -1086,6 +1093,8 @@ li .full-basket-price {
   font-size: 14px;
   line-height: 16px;
   list-style: none;
+  margin-right: auto;
+  padding: 0;
 }
 
 .breadcrumbs a {
@@ -1264,4 +1273,18 @@ li .full-basket-price {
   background-color: rgb(208, 112, 88);
   border-radius: 15px;
   padding: 5px;
+}
+
+.catalog-h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-contact-breadcrumbs {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1146px;
+  padding: 0;
+  margin: 0;
+
 }
