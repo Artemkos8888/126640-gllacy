@@ -149,6 +149,15 @@ body {
   position: relative;
 }
 
+.site-navigation-item:hover::after {
+  content: "";
+  display: block;
+  width: 162px;
+  height: 207px;
+  background: transparent;
+  position: absolute;
+  z-index: 10;
+}
 
 .site-navigation-item:hover > .site-navigation-catalog {
   display: block;
@@ -156,6 +165,7 @@ body {
   position: absolute;
   top: 30px;
   left: -70px;
+  z-index: 60;
   
 
 }
@@ -181,7 +191,6 @@ body {
   display: block;
   padding: 5px;
   padding-left: 15px;
-
 }
 
 .site-navigation-catalog a:hover {
