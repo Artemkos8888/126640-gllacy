@@ -145,12 +145,18 @@ body {
 
 }
 
+.site-navigation-item {
+  position: relative;
+}
+
+
 .site-navigation-item:hover > .site-navigation-catalog {
   display: block;
   width: 110px;
   position: absolute;
-  top: 50px;
-  left: 150px;
+  top: 30px;
+  left: -70px;
+  
 
 }
 
@@ -172,12 +178,15 @@ body {
   font-size: 14px;
   line-height: 16px;
   background-color: #f8f7f4;
+  display: block;
+  padding: 5px;
+  padding-left: 15px;
 
 }
 
 .site-navigation-catalog a:hover {
   background-color: #fbded7;
-  padding: 0 20px;
+
 }
 
 .site-navigation-catalog a:active {
