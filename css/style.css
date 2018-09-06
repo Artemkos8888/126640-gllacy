@@ -1370,8 +1370,9 @@ margin-left: auto;
 }
 
 .pagination-items a:hover {
-  color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 5px 10px;
 }
 
 .pagination-items a:active {
