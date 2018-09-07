@@ -1052,7 +1052,7 @@ body {
 .feedback {
   border-radius: 15px;
   background-color: #f8f7f4;
-  
+  display: none;
 }
 
 .feedback-item {
@@ -1099,6 +1099,7 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
   z-index: 99;
+  display: none;
 }
 
 .feedback h2 {
