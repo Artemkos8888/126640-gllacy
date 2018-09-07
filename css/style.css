@@ -13,7 +13,6 @@ body {
 }
 
 .site-wrapper {
-  width: 1200px;
   margin: 0 auto;
   
 }
@@ -39,17 +38,16 @@ body {
   position: absolute;
   font-size: 0;
   z-index: 20;
-  top: 550px;
-  left: -180px;
-  
+  top: 440px;
+  left: -118px;
 }
 
 
 .slider-control label {
   display: inline-block;
   background-color: transparent;
-  width: 21px;
-  height: 21px;
+  width: 17px;
+  height: 17px;
   margin-right: 8px;
   vertical-align: top;
   border: 2px solid #ffffff;
@@ -92,7 +90,6 @@ body {
   display: flex;
   align-items: center;
   margin: 0px;
-
 }
 
 .nav-enter li {
@@ -116,7 +113,7 @@ body {
 
 .main-footer {
   display: flex;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .main-header-bg {
@@ -139,9 +136,11 @@ body {
 .site-navigation-catalog {
   list-style: none;
   display: none;
-  
-  
-  
+  font-weight: 400;
+}
+
+.site-navigation-catalog li:first-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
 }
 
@@ -166,8 +165,6 @@ body {
   top: 30px;
   left: -70px;
   z-index: 60;
-  
-
 }
 
 
@@ -191,6 +188,13 @@ body {
   display: block;
   padding: 5px;
   padding-left: 15px;
+  padding-right: 5px;
+  width: 110px;
+}
+
+.site-navigation-catalog-new {
+  font-weight: 700;
+
 }
 
 .site-navigation-catalog a:hover {
@@ -213,6 +217,12 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+
+.nav-search {
+  position: relative;
+}
+
 .nav-search a {
   background-image: url("../img/loupe.svg");
   width: 17px;
@@ -228,11 +238,29 @@ body {
 
 .nav-form-search {
   display: none;
+
 }
 
-.nav-search-loupe:hover + .nav-form-search {
+.search-input {
+  width: 310px;
+  padding: 10px 0;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(211, 211, 210);
+}
+
+
+.nav-search:hover > .nav-form-search {
   display: block;
   position: absolute;
+  z-index: 30;
+  top: 40px;
+  left: -320px;
+  padding: 15px;
+  border: 1px solid #f8f7f4;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  
 }
 
 
@@ -240,14 +268,29 @@ body {
 .nav-search a:hover {
   background-color: rgba(255, 255, 255);
   background-image: url("../img/loupe-hover.svg");
-  
+  background-repeat: no-repeat;
+  position: relative;
+
+}
+
+.nav-search:hover::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  z-index: 10;
+  top: 35px;
+  left: -150px;
 }
 
 
 .nav-enter-item {
-  position: relative;
+  position: relative;  
   
 }
+
+
 
 .nav-enter-item a {
   color: #ffffff;
@@ -281,18 +324,33 @@ body {
   left: 14px;
 }
 
-.nav-enter-item-img:hover + .nav-form-enter {
+
+.nav-enter-item:hover > .nav-form-enter {
   display: block;
   content: " ";
-  display: inline-block;
-  background-image: url("../img/entrance.svg");
-  width: 21px;
-  height: 19px;
-  vertical-align: middle;  
   position: absolute;
-  top:10px;
-  left:20px;
+  top: 30px;
+  left: -215px;
+  z-index: 11;
+  padding: 20px;
+  background-color: #f8f7f4;
+  width: 278px;
+  border-radius: 5px;
 }
+
+.nav-enter-item:hover::before {
+  content: "";
+  display: block;
+  background: transparent;
+  position: absolute;
+  z-index: 10;
+  width: 300px;
+  height: 200px;
+  top: 25px;
+  left: -215px;
+}
+
+
 
 
 .nav-form-enter {
@@ -302,7 +360,19 @@ body {
   display: none;
 }
 
+.nav-form-enter input {
+  width: 208px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 19px;
+  margin-bottom: 19px;
+  border-radius: 5px;
+  border: 1px solid rgb(211, 211, 210);
 
+  
+}
 
 
 .nav-enter-item a:hover {
@@ -321,13 +391,16 @@ body {
 
 
 
-.enter {
+.enter-btn {
   font-size: 18px;
   line-height: 24px;
-  
   color: #fefefe;
   background-color: #e95038;
   border: none;
+  padding: 5px 15px;
+  border-radius: 20px;
+
+
 }
 
 .enter-characters a {
@@ -338,14 +411,6 @@ body {
   list-style: none;
 }
 
-.enter-characters a {
-  font-size: 13px;
-  line-height: 24px;
-  color: #323232;
-  text-decoration: underline;
-  list-style: none;
-  
-}
 
 
 /* начало - Корзина index.html */
@@ -590,6 +655,16 @@ body {
   border: none;
   border-radius: 15px;
   padding: 10px 22px;
+}
+
+.button:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button:active {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .raspberry, .chocolate {
@@ -1131,12 +1206,23 @@ body {
 
 /* Ссылки для формы */
 
+.enter-characters {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  width: 240px;
+
+}
+
 .enter-characters a {
   font-size: 13px;
   line-height: 24px;
   color: #323232; 
   text-decoration: none;
-  border-bottom: 1px solid rgba(0, 0, 0)
+  border-bottom: 1px solid rgba(0, 0, 0);
+  
 }
 
 .enter-characters a:hover, .enter-characters a:active  {
@@ -1526,3 +1612,35 @@ margin-left: auto;
   width: 160px;
   margin: 0 auto;
 }
+
+.slide {
+  display: none;
+}
+
+#product-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("img/icecream-bg-green.png");
+}
+
+#product-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("img/icecream-bg-blue.png");
+}
+
+#product-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("img/icecream-bg-purple.png");
+}
+
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+  background-color: #ffffff;
+}
+

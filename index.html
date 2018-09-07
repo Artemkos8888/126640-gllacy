@@ -7,7 +7,11 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="body">
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+    
   <div class="site-wrapper">
       <div class="container">
         <header class="main-header">
@@ -22,7 +26,7 @@
               </a></li>
               <li class="site-navigation-item"><a class="catalog" href="catalog.html">Каталог</a>
                   <ul class="site-navigation-catalog">
-                    <li class="active"><a href="/new.html">Новинки</a></li>
+                    <li class="active"><a class="site-navigation-catalog-new" href="/new.html">Новинки</a></li>
                     <li class="active"><a href="/creamy.html">Сливочное</a></li>
                     <li class="active"><a href="/sherbet.html">Щербеты</a></li>
                     <li class="active"><a href="/fruit-ice.html">Фруктовый лед</a></li>
@@ -40,14 +44,17 @@
       <li class="nav-search">
             
             <a class="nav-search-loupe" href="#"><span class="visually-hidden">Поиск</span></a>
+            
+          
             <form class="nav-form-search" action="https://echo.htmlacademy.ru" method="post">
             <label>
-              <input type="text" placeholder="Что ищем?" name="nav-form-search">
+              <input class="search-input" type="text" placeholder="Что ищем?" name="nav-form-search">
             </label>
               <button class="visually-hidden" type="submit" aria-label="Поиск"><!--Кнокпа будет скрытая-->
                 <!--Тут будет всплывающая форма поиска loupe.svg-->
               </button>
             </form>
+          
       </li>
 
       
@@ -60,8 +67,9 @@
         <form class="nav-form-enter" action="https://echo.htmlacademy.ru" method="post">
                 <label><input type="text" placeholder="Электронная почта" name="email"></label>
             		<label><input type="password" placeholder="Пароль" name="email"></label>
-            		<button class="enter" type="submit">Войти</button>
+            	
             		<ul class="enter-characters">
+                    <li><button class="button enter-btn" type="submit">Войти</button></li>
                 		<li><a href="#">Забыли пароль?</a></li>
                 		<li><a href="#">Новая регистарция</a></li>
             		</ul>
@@ -85,9 +93,12 @@
           </nav>
         
           <div class="container-slider">
+            
+    
           
           <section class="slider">
             
+          
           
             
             <h1 class="visually-hidden">Магазин мороженого</h1> 
@@ -103,26 +114,18 @@
             
             <ul class="background-slider">
               
-            
               
-        
-              
-              
-             
-              
-            
-              
-              <li class="main-content-info">
+              <li class="main-content-info slide" id="slide1">
                 <h2>Крем-брюле и пломбир с малиновым джемом</h2>
                 <a class="button-give-me" href="#">Давайте оба!</a>
               </li>
           
-              <li class="main-content-info">
+              <li class="main-content-info slide" id="slide2">
                 <h2>Шоколадный пломбир и лимонный сорбет</h2>
                 <a class="button-give-me" href="#">Давайте оба</a>
               </li>
               
-              <li class="main-content-info">
+              <li class="main-content-info slide" id="slide3">
                 <h2>Пломбир с помадкой и клубничный щербет</h2>
                 <a class="button-give-me" href="#">Давайте оба</a>
               </li>
@@ -235,7 +238,7 @@
                     <span class="map-feedback-phone">8 812 450-25-25</span><br>
                     (с 10 до 20 ежедневно)
                     </p>
-                    <button class="map-feedback-button" type="submit" name="feedback">Форма обратной связи</button>
+                    <button class="button map-feedback-button" type="submit" name="feedback">Форма обратной связи</button>
                 </div>
                 
     </div>
