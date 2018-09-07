@@ -399,6 +399,7 @@ body {
   border: none;
   padding: 5px 15px;
   border-radius: 20px;
+  margin-right: 50px;
 
 
 }
@@ -1049,9 +1050,82 @@ body {
 }
 
 .feedback {
-  display: none;
+  border-radius: 15px;
+  background-color: #f8f7f4;
+  
 }
 
+.feedback-item {
+  padding: 0;
+}
+
+.feedback-item li {
+  margin-bottom: 20px;
+
+}
+
+.feedback-item input {
+  width: 270px;
+  border-radius: 5px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  padding: 16px;
+}
+
+.feedback-item .textarea {
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  padding: 16px;
+  width: 445px;
+}
+
+
+.modal-feedback {
+  width: 479px;
+  padding: 10px 25px;
+  padding-bottom: 20px;
+  left: 33%;
+  top: 33%;
+  position: fixed;
+  z-index: 100;
+
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+}
+
+.feedback h2 {
+  color: #323232;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.feedback-btn {
+  margin-left: auto;
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.cross {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
 
 .feedback .cross::before {
   content: " ";
@@ -1208,13 +1282,15 @@ body {
 
 .enter-characters {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   width: 240px;
-
 }
+
+.nav-btn-reg {
+  display: flex;
+}
+
 
 .enter-characters a {
   font-size: 13px;

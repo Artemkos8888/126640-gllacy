@@ -67,12 +67,14 @@
         <form class="nav-form-enter" action="https://echo.htmlacademy.ru" method="post">
                 <label><input type="text" placeholder="Электронная почта" name="email"></label>
             		<label><input type="password" placeholder="Пароль" name="email"></label>
-            	
-            		<ul class="enter-characters">
-                    <li><button class="button enter-btn" type="submit">Войти</button></li>
+            	<div class="nav-btn-reg">
+              <button class="button enter-btn" type="submit">Войти</button>
+            <ul class="enter-characters">
+                  
                 		<li><a href="#">Забыли пароль?</a></li>
                 		<li><a href="#">Новая регистарция</a></li>
             		</ul>
+              </div>
                 </form>
       </li>  
            
@@ -243,17 +245,22 @@
                 
     </div>
               
-
-                <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
-                  <h2>Мы обязательно вам ответим!</h2>
-                  <button class="cross" type="button" aria-label="Закрыть"><!--cross-big.svg --></button>
+              
+                <form class="feedback modal-feedback" action="https://echo.htmlacademy.ru" method="post">
+                  <button class="cross" type="button" aria-label="Закрыть"></button>
+                <ul class="feedback-item">
+                <li><h2>Мы обязательно вам ответим!</h2></li>
                   
-                    <label><input type="text" name="name" placeholder="Как вас зовут?"></label>
-                    <label><input type="text" name="email" placeholder="Ваша почта для ответа?"></label>
                   
-                  <textarea name="comment" id="comment-field" rows="5">Напишите что-нибудь...</textarea>
-                  <button class="button" type="submit" name="button">Отправить</button>
+                    <li><label><input type="text" name="name" placeholder="Как вас зовут?"></label></li>
+                  <li>  <label><input type="text" name="email" placeholder="Ваша почта для ответа?"></label></li>
+                  
+                <li>  <textarea class="textarea" name="comment" id="comment-field" rows="5">Напишите что-нибудь...</textarea></li>
+                
+              </ul>
+              <button class="button feedback-btn" type="submit" name="button">Отправить</button>
                 </form>
+            
 
             </section>
         </main>
@@ -282,6 +289,7 @@
     
   </div>
 </div>
+  <div class="modal-overlay"></div>
   </body>
 </html>
 
