@@ -37,16 +37,19 @@
         <ul class="nav-enter">  
           
           <li class="nav-search">
+                
                 <a class="nav-search-loupe" href="#"><span class="visually-hidden">Поиск</span></a>
                 
+              
                 <form class="nav-form-search" action="https://echo.htmlacademy.ru" method="post">
                 <label>
-                  <input type="text" placeholder="Что ищем?" name="nav-form-search">
+                  <input class="search-input" type="text" placeholder="Что ищем?" name="nav-form-search">
                 </label>
                   <button class="visually-hidden" type="submit" aria-label="Поиск"><!--Кнокпа будет скрытая-->
                     <!--Тут будет всплывающая форма поиска loupe.svg-->
                   </button>
                 </form>
+              
           </li>
           
               
@@ -55,55 +58,58 @@
             <form class="nav-form-enter" action="https://echo.htmlacademy.ru" method="post">
                     <label><input type="text" placeholder="Электронная почта" name="email"></label>
                 		<label><input type="password" placeholder="Пароль" name="email"></label>
-                		<button class="enter" type="submit">Войти</button>
-                		<ul class="enter-characters">
-                    		<li><a href="#">Забыли пароль?</a></li>
-                    		<li><a href="#">Новая регистарция</a></li>
-                		</ul>
+                    <div class="nav-btn-reg">
+                    <button class="button enter-btn" type="submit">Войти</button>
+                  <ul class="enter-characters">
+                        
+                      		<li><a href="#">Забыли пароль?</a></li>
+                      		<li><a href="#">Новая регистарция</a></li>
+                  		</ul>
+                    </div>
                     </form>
           </li> 
         
-          <li class="nav-basket-item">
+          <li class="nav-basket-item-2">
 			          
                   <div class="basket">
                     <a class="basket-img-full" href="/basket.html">
                         2 товара<!--Тут будет полная корзина basket-red.svg-->
                     </a>
                   </div>
+                  
+                  <div class="basket-wrap">
+                    <ul class="full-basket">
+                        <li>
+                        <button type="button" aria-label="Удалить из корзины"><!--Тут будет пустая корзина cross-small.svg--></button>
+                        </li>
+                        <li>
+                        <img src="img/ice-cream-small-1.jpg" alt="Иконка с мороженным" width="33" height="33">
+                        </li>
+                        <li class="full-basket-info">Пломбир с апельсиновым джемом</li>
+                        <li>1,5 кг х <span class="full-basket-price">200 руб.</span></li>
+                        <li>300 руб.</li>
+                    </ul>
+                    <ul class="full-basket">
+                      <li><button type="button" aria-label="Удалить из корзины"><!--Тут будет пустая корзина cross-small.svg--></button>
+                      </li>
+                      <li>
+                      <img src="img/ice-cream-small-2.jpg" alt="Иконка с мороженным" width="33" height="33">
+                      </li>
+                      <li class="full-basket-info">Клубничный пломбир с присыпкой из белого шоколада</li>		
+                      <li>1,5 кг х <span class="full-basket-price">300 руб.</span></li>
+                      <li>400 руб.</li>
+                  </ul>
+                
+                <div class="full-basket-total">
+                  <p class="total">Итого: 750 руб.</p>
+                  <a class="button total-btn" href="/order.html">Оформить заказ</a>
+                </div>
+                </div> 
+                
             </li>
           </ul>
         
-        <div class="basket-wrap">
-					<ul class="full-basket">
-							<li>
-							<button type="button" aria-label="Удалить из корзины"><!--Тут будет пустая корзина cross-small.svg--></button>
-							</li>
-							<li>
-							<img src="img/ice-cream-small-1.jpg" alt="Иконка с мороженным" width="33" height="33">
-							</li>
-							<li>Пломбир с апельсиновым джемом</li>
-							<li>1,5 кг х <span class="full-basket-price">200 руб.</span></li>
-							<li>300 руб.</li>
-					</ul>
-            
-          
-    
-  
-					<ul class="full-basket">
-						<li><button type="button" aria-label="Удалить из корзины"><!--Тут будет пустая корзина cross-small.svg--></button>
-						</li>
-						<li>
-						<img src="img/ice-cream-small-2.jpg" alt="Иконка с мороженным" width="33" height="33">
-						</li>
-						<li>Клубничный пломбир с присыпкой из белого шоколада</li>		
-						<li>1,5 кг х <span class="full-basket-price">300 руб.</span></li>
-						<li>400 руб.</li>
-    		</ul>
-			
-			
-    		<p class="total">Итого: 750 руб.</p>
-    		<a class="button" href="/order.html">Оформить заказ</a>
-      </div>  
+ 
       
           
 
@@ -143,7 +149,14 @@
       <div class="price-range">
         <label class="selection-options" for="catalog-price-scale">Цена: 100 руб. – 500 руб.</label>
         <div class="catalog-price">
-        <input type="range" id="catalog-price-scale">
+          <ul class="range">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        
         
         </div>
       </div>
@@ -162,7 +175,7 @@
           
           <li>
             
-            <input type="radio" name="fat-choice" value="to-10" id="fat-choice-to-10">
+            <input type="radio" name="fat-choice" value="to-10" id="fat-choice-to-10" checked>
             <label for="fat-choice-to-10"><!--radio-on.svg-->до 10%</label>
             
           </li>
@@ -346,8 +359,14 @@
         <p class="copyright">Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
       </div>
     </div>
+    
+  
+    
+    
+    
     </footer>
   </div>
   </div>
+
   </body>
 </html>

@@ -260,7 +260,6 @@ body {
   border: 1px solid #f8f7f4;
   background-color: #f8f7f4;
   border-radius: 5px;
-  
 }
 
 
@@ -337,6 +336,81 @@ body {
   width: 278px;
   border-radius: 5px;
 }
+
+.nav-basket-item-2 {
+  position: relative;
+}
+
+
+
+.nav-basket-item-2:hover > .basket-wrap {
+  display: block;
+  content: " ";
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  z-index: 150;
+  padding: 20px;
+  background-color: #f8f7f4;
+  width: 278px;
+  border-radius: 5px;
+  width: 540px;
+}
+
+.full-basket {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+.full-basket button {
+  border: none;
+  background: transparent;
+  font-size: 0;
+}
+
+.full-basket-info {
+  margin-right: 50px;
+  width: 220px;
+}
+
+.total {
+  font-size: 15px;
+  line-height: 18px;
+  color: #323232;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.full-basket-total {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.total-btn {
+  margin-left: auto;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.basket-wrap::after {
+  position: absolute;
+  content: " ";
+  background: transparent;
+  top: -50px;
+  right: 0px;
+  z-index: 1;
+  width: 200px;
+  height: 50px;
+}
+
 
 .nav-enter-item:hover::before {
   content: "";
@@ -765,6 +839,8 @@ body {
 
 .main-content-items {
   margin-bottom: 0;
+
+  
 }
 
 .main-content-item {
@@ -785,6 +861,7 @@ body {
   margin: 0;
   width: 270px;
   padding-bottom: 25px;
+
 }
 
 
@@ -1352,6 +1429,8 @@ li .full-basket-price {
 
 
 
+
+
 /*
 Хлебгые крошки - начало
 */
@@ -1428,7 +1507,7 @@ li .full-basket-price {
   width: 177px;
   display: flex;
   justify-content: center;
-  padding: 7px 21px;
+  padding: 17px 21px;
   border-radius: 15px;
 }
 
@@ -1443,7 +1522,6 @@ li .full-basket-price {
   margin-right: 15px;
 }
   
-
 .catalog-taste {
   width: 704px;
 }
@@ -1492,6 +1570,7 @@ li .full-basket-price {
   background-color: rgba(248,247,244,0.2);
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
 }
 
 
@@ -1616,6 +1695,20 @@ margin-left: auto;
   justify-content: space-between;
 }
 
+.catalog-fat-choice-items input {
+  
+}
+
+.catalog-fat-choice-items input::before {
+  content: " ";
+  background-image: url("../img/radio-off.svg");
+  display: block;
+  width: 25px;
+  height: 25px;
+  
+  
+}
+
 .active-catalog {
   background-color: rgb(208, 112, 88);
   border-radius: 15px;
@@ -1721,3 +1814,61 @@ margin-left: auto;
   background-color: #ffffff;
 }
 
+.range {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  margin: -4px;
+  padding: 0;
+  
+}
+
+
+
+.range li:first-child {
+  border-bottom: 5px solid rgba(248, 247, 244, 0.502);
+  width: 17px;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+    
+
+}
+
+.range li:nth-child(2) {
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  padding: 10px;
+  align-items: center;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: -8px;
+  left: 13px;
+
+}
+
+.range li:nth-child(3) {
+  border-bottom: 5px solid rgb(248, 247, 244);
+  width: 112px;
+  align-self: center;
+}
+
+.range li:nth-child(4) {
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  padding: 10px;
+  align-items: center;
+  position: absolute;
+  width: 35px;
+  height: 22px;
+  top: -9px;
+  left: 111px;
+}
+
+
+.range li:last-child {
+  border-bottom: 5px solid rgba(248, 247, 244, 0.502);
+  width: 47px;
+  align-self: center;
+}
