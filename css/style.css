@@ -1077,6 +1077,7 @@ body {
   width: 302px;
   top: 63px;
   left: 870px;  
+  z-index: 70;
 }
 
 .map-feedback-info {
@@ -1130,6 +1131,57 @@ body {
   border-radius: 15px;
   background-color: #f8f7f4;
   display: none;
+}
+
+.feedback-show {
+  display: block;
+  
+  animation: bounce 0.6s;
+}
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .feedback-item {
@@ -1629,21 +1681,24 @@ margin-left: auto;
   text-decoration: none;
 }
 
-.pagination-items a:hover {
+.pagination-items li:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
-  padding: 5px 10px;
+  padding: 0px 5px;
 }
 
-.pagination-items a:active {
+.pagination-items li:active {
   color: #323232;
   background-color: rgba(255, 255, 255);
+  padding: 0px 5px;
+  border-radius: 15px;
+
 }
 
 .pagination-items li:nth-child(2) {
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
-  padding: 5px 10px;
+  padding: 0px 5px;
 }
 
 .pagination-items .active-pagination {
@@ -1688,24 +1743,28 @@ margin-left: auto;
   display: flex;
   list-style: none;
   background-color: rgba(255, 255, 255, 0.2);
-  padding: 9px 21px;
+  padding: 9px 0;
+  padding-left: 48px;
+  padding-right: 14px;
   border-radius: 15px;
   margin: 0;
-  width: 372px;
+  width: 350px;
   justify-content: space-between;
 }
 
-.catalog-fat-choice-items input {
-  
+.catalog-fat-choice-items li {
+  position: relative;
 }
 
-.catalog-fat-choice-items input::before {
+.catalog-fat-choice-items label::before {
   content: " ";
   background-image: url("../img/radio-off.svg");
   display: block;
   width: 25px;
   height: 25px;
-  
+  position: absolute;
+  top: -3px;
+  left: -32px;
   
 }
 
@@ -1871,4 +1930,14 @@ margin-left: auto;
   border-bottom: 5px solid rgba(248, 247, 244, 0.502);
   width: 47px;
   align-self: center;
+}
+
+.map-img {
+  position: relative;
+  z-index: 50;
+}
+
+.map-interact {
+  position: absolute;
+  z-index: 60;
 }
