@@ -1253,6 +1253,10 @@ body {
   display: none;
 }
 
+.modal-overlay-open {
+  display: block;
+}
+
 .feedback h2 {
   color: #323232;
   font-size: 24px;

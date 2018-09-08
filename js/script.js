@@ -5,6 +5,7 @@ var link = document.querySelector(".map-feedback-button");
   var close = popup.querySelector(".cross");
   var login = popup.querySelector("[name=login]");
   var email = popup.querySelector("[name=email]");
+  var overlay = document.querySelector(".modal-overlay");
   
   
   var isStorageSupport = true;
@@ -21,12 +22,14 @@ var link = document.querySelector(".map-feedback-button");
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
   popup.classList.add("feedback-show");
+  overlay.classList.add("modal-overlay-open");
   });
   
   close.addEventListener("click", function (evt) {
    evt.preventDefault();
    popup.classList.remove("feedback-show");
    popup.classList.remove("modal-error");
+   overlay.classList.remove("modal-overlay-open");
    
    if (storage) {
      login.value = storage;
