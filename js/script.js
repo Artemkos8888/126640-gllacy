@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 var link = document.querySelector(".map-feedback-button");
   var popup = document.querySelector(".modal-feedback");
   var close = popup.querySelector(".cross");
-  var form = popup.querySelector("form");
   var login = popup.querySelector("[name=login]");
   var email = popup.querySelector("[name=email]");
   
@@ -17,7 +16,7 @@ var link = document.querySelector(".map-feedback-button");
     isStorageSupport = false;
   }
   
-  var form = popup.querySelector("form");
+
   
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -39,7 +38,7 @@ var link = document.querySelector(".map-feedback-button");
    login.focus();
  });
  
- form.addEventListener("submit", function (evt) { // выдает ошибку
+ popup.addEventListener("submit", function (evt) { // выдает ошибку
    if (!login.value || !email.value) {
     evt.preventDefault();
     popup.classList.remove("modal-error");
