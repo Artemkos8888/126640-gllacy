@@ -39,7 +39,7 @@ var link = document.querySelector(".map-feedback-button");
    login.focus();
  });
  
- form.addEventListener("submit", function (evt) {
+ form.addEventListener("submit", function (evt) { // выдает ошибку
    if (!login.value || !email.value) {
     evt.preventDefault();
     popup.classList.remove("modal-error");
