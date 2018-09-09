@@ -919,6 +919,7 @@ body {
   color: #ffffff;
   font-size: 45px;
   line-height: 45px;
+  padding-bottom: 20px;
   text-decoration: none;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
@@ -927,11 +928,11 @@ body {
 .main-content-item p { /* Ссылки в основном меню с товарами */
   color: #ffffff;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 22px;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-align: center;
-  display: inline-block;
+  display: inline;
   font-weight: 400;
 
 }
@@ -984,7 +985,7 @@ body {
   padding: 0;
   margin: 0;
   width: 270px;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
 
 }
 
@@ -1894,7 +1895,10 @@ margin-left: auto;
   color: #323232;
 }
 
-
+.prod-info {
+  width: 250px;
+  margin: 0 auto;
+}
 
 /* пагинация */
 .pagination {
@@ -1904,7 +1908,7 @@ margin-left: auto;
   margin-bottom: 34px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.302);
   padding-bottom: 0;
-  padding-top: 72px;
+  padding-top: 42px;
 }
 
 
