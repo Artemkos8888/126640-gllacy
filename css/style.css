@@ -1613,6 +1613,7 @@ li .full-basket-price {
   color: #000000;
   background-color: #ffffff;
   background-image: url(../img/icon-down-dir.svg);
+  background-size: 11px 10px;
 }
 
 .catalog-price {
