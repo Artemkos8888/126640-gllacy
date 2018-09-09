@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    
   </head>
   <body>
     <div class="site-wrapper">
@@ -20,7 +21,7 @@
             </li>
             <li class="site-navigation-item second-nav-item"><a class="active-catalog" href="#">Каталог</a>
               <ul class="site-navigation-catalog">
-                <li><a href="/new.html">Новинки</a></li>
+                <li><a class="site-navigation-catalog-new" href="/new.html">Новинки</a></li>
                 <li><a href="/creamy.html">Сливочное</a></li>
                 <li><a href="/sherbet.html">Щербеты</a></li>
                 <li><a href="/fruit-ice.html">Фруктовый лед</a></li>
@@ -86,17 +87,17 @@
                         <img src="img/ice-cream-small-1.jpg" alt="Иконка с мороженным" width="33" height="33">
                         </li>
                         <li class="full-basket-info">Пломбир с апельсиновым джемом</li>
-                        <li>1,5 кг х <span class="full-basket-price">200 руб.</span></li>
+                        <li class="full-basket-number">1,5 кг х <span class="full-basket-price">200 руб.</span></li>
                         <li>300 руб.</li>
                     </ul>
-                    <ul class="full-basket">
+                    <ul class="full-basket full-basket-second">
                       <li><button type="button" aria-label="Удалить из корзины"><!--Тут будет пустая корзина cross-small.svg--></button>
                       </li>
                       <li>
                       <img src="img/ice-cream-small-2.jpg" alt="Иконка с мороженным" width="33" height="33">
                       </li>
-                      <li class="full-basket-info">Клубничный пломбир с присыпкой из белого шоколада</li>		
-                      <li>1,5 кг х <span class="full-basket-price">300 руб.</span></li>
+                      <li class="full-basket-info second-basket-info">Клубничный пломбир с присыпкой из белого шоколада</li>		
+                      <li class="full-basket-number">1,5 кг х <span class="full-basket-price">300 руб.</span></li>
                       <li>400 руб.</li>
                   </ul>
                 
@@ -120,13 +121,13 @@
       </div>
       
       <ul class="breadcrumbs">
-        <li><a href="/">Главная</a></li>
+        <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
         <li>Сливочное</li>
       </ul>
     </div>
       </nav>
-      <h1 class="catalog-h1">Сливочное мороженное</h1>
+      <h1 class="catalog-h1">Сливочное мороженое</h1>
       
     </header>
 
@@ -147,7 +148,7 @@
       </div>
       
       <div class="price-range">
-        <label class="selection-options" for="catalog-price-scale">Цена: 100 руб. – 500 руб.</label>
+        <label class="selection-options">Цена: 100 руб. – 500 руб.</label>
         <div class="catalog-price">
           <ul class="range">
             <li></li>
@@ -169,7 +170,7 @@
           
           <li>
             <input type="radio" name="fat-choice" value="0%" id="fat-choice-zero">
-            <label for="fat-choice-zero"></span>0%</label>
+            <label for="fat-choice-zero">0%</label>
             
           </li>
           
