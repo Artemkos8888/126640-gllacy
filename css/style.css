@@ -807,8 +807,8 @@ body {
 
 .main-content-item a { /* Ссылки в основном меню с товарами */
   color: #ffffff;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 24px;
   text-decoration: none;
   text-align: center;
 }
@@ -883,19 +883,15 @@ body {
 }
 
 .main-content-item li {
-  padding: 0;
+  padding: 0 11px;
+  padding-top: 5px;
   margin: 0;
   width: 270px;
   padding-bottom: 40px;
   position: relative;
 }
 
-.product-wrapper {
-  position: absolute;
-  top:0;
-  left:0;
-  display: block;
-}
+
 
 .main-content-item .main-content-item-product::before {
   content: " ";
@@ -1803,7 +1799,7 @@ li .full-basket-price {
 
 .catalog-form {
   width: 860px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .catalog-filter {
@@ -1899,7 +1895,7 @@ li .full-basket-price {
 }
 
 .btn-product {
-  display: none;
+  display: block;
   background-color: #ed5a3d;
   background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
@@ -1917,6 +1913,24 @@ li .full-basket-price {
   display: block;
   width: 160px;
   margin: 0 auto;
+}
+
+
+.product-wrapper {
+  position: absolute;
+  top:0;
+  left:0;
+  display: none;
+}
+
+.main-content-item li:hover > .product-wrapper {
+  position: absolute;
+  top: 333px;
+  left: 52px;
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  z-index: 20;
 }
 
 .slide {
