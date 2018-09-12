@@ -718,7 +718,7 @@ body {
 }
 
 .main-content-bonus {
-  margin-bottom: 35px;
+  margin-bottom: 68px;
 }
 
 .main-content-bonus-items {
@@ -921,6 +921,7 @@ body {
   margin-bottom: 40px;
   height: auto;
   padding-bottom: 25px;
+  margin-top: -32px;
 }
 
 .about-us h2 {
@@ -1263,30 +1264,31 @@ body {
 }
 
 .feedback-item li {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .feedback-item input {
-  width: 270px;
+  width: 245px;
   border-radius: 5px;
   border: 1px solid rgba(178, 178, 178, 0.52);
-  padding: 16px;
+  padding: 11px;
 }
 
 .feedback-item .textarea {
-  width: 400px;
+  width: 394px;
   border-radius: 5px;
   border: 1px solid rgba(178, 178, 178, 0.52);
-  padding: 16px;
-  width: 445px;
+  padding: 8px 13px;
+  padding-bottom: 16px;
+  resize: none;
 }
 
 .modal-feedback {
-  width: 479px;
-  padding: 10px 25px;
-  padding-bottom: 20px;
-  left: 33%;
-  top: 33%;
+  width: 428px;
+  padding: 1px 25px;
+  padding-bottom: 26px;
+  left: calc(50% - 240px);
+  top: calc(50% - 222px);
   position: fixed;
   z-index: 100;
 }
@@ -1311,6 +1313,8 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
+  margin: 0;
+  padding: 0;
 }
 
 .feedback-btn {
@@ -1318,8 +1322,8 @@ body {
   display: block;
   font-size: 18px;
   line-height: 24px;
-  padding: 10px;
-  border-radius: 20px;
+  padding: 11px 24px;
+  border-radius: 30px;
 }
 
 .cross {
@@ -1328,8 +1332,8 @@ body {
   cursor: pointer;
   font-size: 0;
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 14px;
+  right: 8px;
 }
 
 .feedback .cross::before {
@@ -1720,7 +1724,7 @@ li .full-basket-price {
   margin-bottom: 34px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.302);
   padding-bottom: 0;
-  padding-top: 42px;
+  padding-top: 10px;
 }
 
 .pagination-items {
@@ -1798,7 +1802,7 @@ li .full-basket-price {
 
 .catalog-form {
   width: 860px;
-  margin-bottom: 61px;
+  margin-bottom: 66px;
 }
 
 .catalog-filter {
@@ -1904,7 +1908,7 @@ li .full-basket-price {
   text-decoration: none;
   font-size: 18px;
   line-height: 24px;
-  padding: 10px 5px;
+  padding: 10px 17px;
   border-radius: 15px;
 }
 
@@ -1924,8 +1928,8 @@ li .full-basket-price {
 
 .main-content-item li:hover > .product-wrapper {
   position: absolute;
-  top: 333px;
-  left: 52px;
+  top: 338px;
+  left: 31px;
   display: block;
   font-size: 18px;
   line-height: 24px;
