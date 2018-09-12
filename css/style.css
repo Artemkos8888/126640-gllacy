@@ -577,7 +577,7 @@ body {
 }
 .nav-enter .basket-img-full {
   background-repeat: no-repeat;
-  background-color: rgb(248, 247, 244, 0.98);
+  background-color: rgba(248, 247, 244, 0.98);
   border-radius: 15px;
   padding: 7px 0;
   padding-left: 43px;
@@ -621,6 +621,7 @@ body {
 .main-content {
   margin-top: -270px;
   margin-bottom: 33px;
+  
 }
 
 .main-content-info {
@@ -2170,4 +2171,8 @@ li .full-basket-price {
 .main-footer-copyright .footer-logo {
   text-decoration: none;
   border: none;
+}
+
+select::-ms-expand {
+    display: none;
 }
