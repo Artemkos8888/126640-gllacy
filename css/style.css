@@ -1615,13 +1615,13 @@ li .full-basket-price {
   color: #ffffff;
   background: url(../img/icon-down-dir.svg) no-repeat;
   background-position: 98% 50%;
+  width: 100%;
 }
 
 .catalog-sort select:focus {
   color: #000000;
   background-color: #ffffff;
   border-radius: 30px;
-  padding: 7px;
 }
 
 .catalog-price {
@@ -1685,9 +1685,9 @@ li .full-basket-price {
 }
 
 .catalog-sort:focus {
-  padding-right: 10px;
+  background-color: #ffffff;
+  border-radius: 30px;
 }
-
 
 .main-content-item li:hover {
   background-color: rgba(248,247,244,0.2);
