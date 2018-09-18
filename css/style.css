@@ -255,12 +255,16 @@ body {
   padding-bottom: 20px;
 }
 
-.site-navigation-catalog a:hover {
+.site-navigation-catalog a:hover:not(.active-item) {
   background-color: #fbded7;
 }
 
-.site-navigation-catalog a:active {
+.site-navigation-catalog a:active:not(.active-item) {
   background-color: #f6b5a5;
+}
+
+.site-navigation-catalog .active-item {
+  background-color: rgb(208, 112, 88);
 }
 
 .visually-hidden {
