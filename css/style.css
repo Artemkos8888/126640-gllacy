@@ -554,7 +554,9 @@ body {
   border: none;
   border-radius: 18px;
   background-color: #e95038;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .enter-characters a {
