@@ -15,7 +15,7 @@
     <input class="visually-hidden" type="radio" id="product-3" name="toggle">
     <div class="site-wrapper">
       <div class="container">
-        <header class="main-header">
+        <header>
           <div class="main-header-bg">
             <nav class="main-navigation">
               <ul class="site-navigation">
@@ -57,15 +57,21 @@
                     <span class="visually-hidden">Поиск</span>
                   </a>
                   <form class="nav-form-search" action="https://echo.htmlacademy.ru" method="post">
-                    <label><input class="search-input" type="text" placeholder="Что ищем?" name="nav-form-search"></label>
+                    <label>
+                      <input class="search-input" type="text" placeholder="Что ищем?" name="nav-form-search">
+                    </label>
                     <button class="visually-hidden" type="submit" aria-label="Поиск"></button>
                   </form>
                 </li>
                 <li class="nav-enter-item">
                   <a class="nav-enter-item-img" href="/login.html">Вход</a>
                   <form class="nav-form-enter" action="https://echo.htmlacademy.ru" method="post">
-                    <label><input type="text" placeholder="Электронная почта" name="email"></label>
-                    <label><input type="password" placeholder="Пароль" name="email"></label>
+                    <label>
+                      <input type="text" placeholder="Электронная почта" name="email">
+                    </label>
+                    <label>
+                      <input type="password" placeholder="Пароль" name="email">
+                    </label>
                     <div class="nav-btn-reg">
                       <button class="button enter-btn" type="submit">Войти</button>
                       <ul class="enter-characters">
@@ -154,7 +160,8 @@
                 <a class="main-content-item-product" href="#">
                   <img src="img/product-2.jpg" alt="Сливночно-кофейное мороженное с кусочками шоколада" width="267" height="267">
                   <span class="product-price">
-                    380<span class="ruble">/кг</span></span>
+                    380<span class="ruble">/кг</span>
+                  </span>
                   <div class="prod-info">
                     <p>Сливочно-кофейное с кусочками шоколада</p>
                   </div>
@@ -167,10 +174,11 @@
                 <a class="main-content-item-product" href="#">
                   <img src="img/product-3.jpg" alt="Сливночное-клубничное мороженное с присыпкой из белого шоколада" width="267" height="267">
                   <span class="product-price">
-                    355<span class="ruble">/кг</span></span>
+                    355<span class="ruble">/кг</span>
+                  </span>
                   <div class="prod-info">
-                    <p>Сливочно-клубничное с присыпкой из белого шоколада</p></div>
-                  
+                    <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+                  </div>
                 </a>
                 <div class="product-wrapper">
                   <a class="btn-product" href="#">Быстрый просмотр</a>
@@ -180,7 +188,8 @@
                 <a class="main-content-item-product" href="#">
                   <img src="img/product-4.jpg" alt="Сливночное мороженное крем-брюле с карамельной подливкой" width="267" height="267">
                   <span class="product-price">
-                    415<span class="ruble">/кг</span></span>
+                    415<span class="ruble">/кг</span>
+                  </span>
                   <div class="prod-info">
                     <p>Сливочное крем-брюле с карамельной подливкой</p>
                   </div>
@@ -210,11 +219,14 @@
             </article>
             <section class="content-subscription">
               <div class="content-subscription-wrap">
-                <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-                </p>
+                <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form class="email-sent" action="https://echo.htmlacademy.ru" method="post">
-                  <label><input class="email" type="email" placeholder="Электронная почта"></label>
-                  <label><input class="button email-btn" type="submit" value="Отправить"></label>
+                  <label>
+                    <input class="email" type="email" placeholder="Электронная почта">
+                  </label>
+                  <label>
+                    <input class="button email-btn" type="submit" value="Отправить">
+                  </label>
                 </form>
               </div>
             </section>
@@ -230,14 +242,9 @@
             <img class="map-img" src="img/map.png" alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
             <div class="map-feedback">
               <div class="map-feedback-info">
-                <p class="map-feedback-info-top">Адрес главного офиса<br>
-                  и офлайн-магазина:<br>
-                  <span class="map-feedback-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
-                <p class="map-feedback-info-bottom">Для заказов по телефону:<br>
-                  <span class="map-feedback-phone">8 812 450-25-25</span><br>
-                  (с 10 до 20 ежедневно)
-                </p>
-                <button class="button map-feedback-button" type="submit" name="feedback">Форма обратной связи</button>
+                <p class="map-feedback-info-top">Адрес главного офиса<br> и офлайн-магазина:<br><span class="map-feedback-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
+                <p class="map-feedback-info-bottom">Для заказов по телефону:<br><span class="map-feedback-phone">8 812 450-25-25</span><br>(с 10 до 20 ежедневно)</p>
+                <a class="button map-feedback-button">Форма обратной связи</a>
               </div>
             </div>
             <form class="feedback modal-feedback" action="https://echo.htmlacademy.ru" method="post">
@@ -247,10 +254,14 @@
                   <h2>Мы обязательно вам ответим!</h2>
                 </li>
                 <li>
-                  <label><input type="text" name="login" required="required" placeholder="Как вас зовут?"></label>
+                  <label>
+                    <input type="text" name="login" required="required" placeholder="Как вас зовут?">
+                  </label>
                 </li>
                 <li>
-                  <label><input type="text" name="email" required="required" placeholder="Ваша почта для ответа?"></label>
+                  <label>
+                    <input type="text" name="email" required="required" placeholder="Ваша почта для ответа?">
+                  </label>
                 </li>
                 <li>
                   <textarea class="textarea" name="comment" id="comment-field" placeholder="Напишите что-нибудь..." rows="7"></textarea>
@@ -265,24 +276,27 @@
             <ul class="main-footer-items">
               <li>
                 <a class="social-button" href="#">
-                  <span class="visually-hidden">Твитер</span></a>
+                  <span class="visually-hidden">Твитер</span>
+                </a>
               </li>
               <li>
                 <a class="social-button" href="#">
-                  <span class="visually-hidden">Инстаграм</span></a>
+                  <span class="visually-hidden">Инстаграм</span>
+                </a>
               </li>
               <li>
                 <a class="social-button" href="#">
-                  <span class="visually-hidden">Фейсбук</span></a>
+                  <span class="visually-hidden">Фейсбук</span>
+                </a>
               </li>
               <li>
                 <a class="social-button" href="#">
-                  <span class="visually-hidden">Вконтакте</span></a>
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
               </li>
             </ul>
             <ul class="main-footer-informations">
               <li class="suppliers">
-                <!--heart.svg-->
                 <a href="#">Для поставщиков</a>
               </li>
               <li>
@@ -299,9 +313,7 @@
               <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
                 <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип htmlacademy">
               </a>
-              <p class="copyright">Сделано в
-                <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-                © 2017</p>
+              <p class="copyright">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
             </div>
           </div>
         </footer>
