@@ -392,6 +392,8 @@ body {
 
 .nav-basket-item-2 {
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-basket-item-2:hover > .basket-wrap {
@@ -563,12 +565,6 @@ body {
   color: #323232;
 }
 
-.basket {
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
 .nav-basket-item .basket-img::before {
   position: absolute;
   left: 16px;
@@ -606,7 +602,7 @@ body {
 .basket a::before {
   position: absolute;
   top: 6px;
-  left: 17px;
+  left: 25px;
   width: 21px;
   height: 20px;
 
@@ -1961,9 +1957,15 @@ li .full-basket-price {
   cursor: pointer;
 }
 
-.pagination-items a:hover:not(.icon-dir-left):not(.icon-dir-right) {
+.pagination-items a:hover:not(.icon-dir-left):not(.icon-dir-right):not(.active-pagination) {
   background-color: rgba(255, 255, 255, 0.2);
   color: #ffffff;
+  border-radius: 50%;
+}
+
+.pagination-items a:active:not(.icon-dir-left):not(.icon-dir-right):not(.active-pagination) {
+  background-color: rgba(255, 255, 255);
+  color: #323232;
   border-radius: 50%;
 }
 
