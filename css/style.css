@@ -354,7 +354,7 @@ body {
 }
 
 .nav-enter .nav-enter-item-img {
-  font-weight: 400;
+  font-weight: 500;
   position: relative;
   padding: 7px 16px 8px 44px;
   border-radius: 25px;
@@ -565,15 +565,18 @@ body {
   color: #323232;
 }
 
-.nav-basket-item .basket-img::before {
+.nav-basket-item {
+  position: relative;
+}
+
+.basket-img::before {
   position: absolute;
-  left: 16px;
+  top: 6px;
+  left: 25px;;
   width: 21px;
   height: 20px;
 
   content: url("../img/basket.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .basket-img {
@@ -583,6 +586,9 @@ body {
 
   color: #fff;
   border-radius: 15px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
 .nav-enter .basket-img {
@@ -597,9 +603,12 @@ body {
   text-decoration: none;
 
   color: #323232;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
-.basket a::before {
+.basket-img-full::before {
   position: absolute;
   top: 6px;
   left: 25px;
@@ -609,15 +618,7 @@ body {
   content: url("../img/basket-red.svg");
 }
 
-.basket a {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
-  background-color: rgba(255, 255, 255, 0.2);
-  background-repeat: no-repeat;
-}
-
-.basket .basket-img-full a {
+.basket-img-full a {
   color: #323232;
 }
 
@@ -1183,7 +1184,7 @@ body {
   padding-left: 19px;
 }
 
-.content-news h3 a {
+.content-news a {
   font-size: 24px;
   line-height: 30px;
   text-decoration: underline;
@@ -1522,7 +1523,7 @@ body {
   list-style: none;
 }
 
-.main-footer-items li a {
+.main-footer-items a {
   display: block;
 
   width: 32px;
@@ -1620,7 +1621,7 @@ body {
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
-.main-footer-informations .suppliers a {
+.suppliers a {
   font-weight: 700;
 }
 
