@@ -543,11 +543,12 @@ body {
   line-height: 24px;
   margin-right: 10px;
   margin-left: 18px;
-  padding: 0 24px;
+  padding: 10px 24px;
   color: #fefefe;
   border: none;
-  border-radius: 59px;
+  border-radius: 18px;
   background-color: #e95038;
+  align-self: center;
 }
 
 .enter-characters a {
@@ -1956,7 +1957,7 @@ li .full-basket-price {
   cursor: pointer;
 }
 
-.pagination-items a:hover {
+.pagination-items a:hover:not(.icon-dir-left):not(.icon-dir-right) {
   background-color: rgba(255, 255, 255, 0.2);
   color: #ffffff;
   border-radius: 50%;
