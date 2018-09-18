@@ -1906,6 +1906,11 @@ li .full-basket-price {
 
 .prod-info {
   margin: 0 auto;
+  padding: 0 2px;
+}
+
+.prod-info-special {
+  padding: 0 6px;
 }
 
 .pagination {
