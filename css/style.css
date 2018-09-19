@@ -80,6 +80,7 @@ body {
   width: 560px;
   margin: 0 235px 0 0;
   padding: 0;
+  position: relative;
 }
 
 .nav-enter {
@@ -155,6 +156,7 @@ body {
 
 .second-nav-item {
   margin-right: 13px;
+  position: relative;
 }
 
 .second-nav-item-catalog {
@@ -191,10 +193,6 @@ body {
 
   text-decoration: none;
   border: none;
-}
-
-.second-nav-item a {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .third-nav-item a {
@@ -564,8 +562,8 @@ body {
   border-radius: 18px;
   background-color: #e95038;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .enter-characters a {
@@ -583,7 +581,7 @@ body {
 .basket-img::before {
   position: absolute;
   top: 6px;
-  left: 25px;;
+  left: 25px;
   width: 21px;
   height: 20px;
 
@@ -709,7 +707,7 @@ body {
   border: none;
   background-color: #ed5a3d;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-          box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
 .button:hover {
@@ -773,7 +771,13 @@ body {
   );
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background: -o-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#f26843), to(#e74a35));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f26843),
+    to(#e74a35)
+  );
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   background-color: #ed5c3e;
   -webkit-box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
@@ -790,7 +794,13 @@ body {
   );
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: -o-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f58669),
+    to(#ec6f5e)
+  );
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
@@ -806,7 +816,13 @@ body {
   );
   background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background: -o-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#d84732), to(#e1613e));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#d84732),
+    to(#e1613e)
+  );
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   -webkit-box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
@@ -865,7 +881,13 @@ body {
   );
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: -o-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f58669),
+    to(#ec6f5e)
+  );
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
@@ -881,7 +903,13 @@ body {
   );
   background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background: -o-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#d84732), to(#e1613e));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#d84732),
+    to(#e1613e)
+  );
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   -webkit-box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
@@ -1016,7 +1044,7 @@ body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-bottom: 5px;
   margin-bottom: -15px;
 
@@ -1750,7 +1778,7 @@ li .full-basket-price {
   padding: 0;
   list-style: none;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 .breadcrumbs a {
@@ -1949,10 +1977,10 @@ li .full-basket-price {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   position: relative;
 }
 
@@ -1969,13 +1997,15 @@ li .full-basket-price {
   cursor: pointer;
 }
 
-.pagination-items a:hover:not(.icon-dir-left):not(.icon-dir-right):not(.active-pagination) {
+.pagination-items
+  a:hover:not(.icon-dir-left):not(.icon-dir-right):not(.active-pagination) {
   background-color: rgba(255, 255, 255, 0.2);
   color: #ffffff;
   border-radius: 50%;
 }
 
-.pagination-items a:active:not(.icon-dir-left):not(.icon-dir-right):not(.active-pagination) {
+.pagination-items
+  a:active:not(.icon-dir-left):not(.icon-dir-right):not(.active-pagination) {
   background-color: rgb(255, 255, 255);
   color: #323232;
   border-radius: 50%;
@@ -1986,8 +2016,8 @@ li .full-basket-price {
   width: 8px;
   height: 12px;
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
   background-repeat: no-repeat;
   position: absolute;
   top: 13px;
@@ -2062,6 +2092,18 @@ li .full-basket-price {
 .passive-catalog {
   margin-right: 15px;
   padding: 7px 13px;
+}
+
+.second-nav-item::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 61px;
+  display: block;
+  top: 17px;
+  left: 12px;
+
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .passive-catalog:hover {
@@ -2166,7 +2208,13 @@ li .full-basket-price {
   );
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: -o-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f58669),
+    to(#ec6f5e)
+  );
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
@@ -2182,7 +2230,13 @@ li .full-basket-price {
   );
   background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background: -o-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#d84732), to(#e1613e));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#d84732),
+    to(#e1613e)
+  );
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   -webkit-box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
