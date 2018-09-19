@@ -153,8 +153,7 @@ body {
 
 .second-nav-item {
   position: relative;
-
-  margin-right: 13px;
+  margin-right: 15px;
 }
 
 .second-nav-item-catalog {
@@ -572,7 +571,6 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-
   display: block;
   padding: 10px;
   text-decoration: none;
@@ -592,7 +590,6 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-
   text-decoration: none;
   color: #323232;
 }
@@ -892,8 +889,7 @@ body {
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-.chocolate,
-.raspberry {
+.chocolate, .raspberry {
   position: relative;
 }
 
@@ -941,9 +937,6 @@ body {
   line-height: 24px;
   text-align: center;
   text-decoration: none;
-
-  /* Ссылки в основном меню с товарами */
-
   color: #fff;
 }
 
@@ -962,9 +955,6 @@ body {
   padding-top: 1px;
   padding-bottom: 21px;
   text-decoration: none;
-
-  /* Ссылки в основном меню с товарами */
-
   color: #fff;
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
@@ -977,14 +967,11 @@ body {
   padding: 0 2px;
   text-align: center;
   text-decoration: none;
-  /* Ссылки в основном меню с товарами */
-
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.main-content-item p:active,
-.main-content-item p:hover {
+.main-content-item p:active, .main-content-item p:hover {
   color: #ffbc9e;
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
@@ -1326,17 +1313,14 @@ body {
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
-
   70% {
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
   }
-
   90% {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
-
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -1347,17 +1331,14 @@ body {
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
-
   70% {
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
   }
-
   90% {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
-
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -1369,7 +1350,6 @@ body {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
-
   10%,
   30%,
   50%,
@@ -1378,7 +1358,6 @@ body {
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
-
   20%,
   40%,
   60%,
@@ -1393,7 +1372,6 @@ body {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
-
   10%,
   30%,
   50%,
@@ -1402,7 +1380,6 @@ body {
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
-
   20%,
   40%,
   60%,
@@ -1610,8 +1587,7 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.main-footer-informations a:active,
-.main-footer-informations a:hover {
+.main-footer-informations a:active, .main-footer-informations a:hover {
   color: #ffbc9e;
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
@@ -1662,8 +1638,7 @@ body {
   border-bottom: 1px solid rgb(0, 0, 0);
 }
 
-.enter-characters a:active,
-.enter-characters a:hover {
+.enter-characters a:active, .enter-characters a:hover {
   font-size: 13px;
   line-height: 24px;
   text-decoration: none;
@@ -1927,14 +1902,12 @@ li .full-basket-price {
   padding: 0;
   padding-top: 6px;
   padding-right: 23px;
-
   list-style: none;
   text-decoration: none;
 }
 
 .pagination-items li {
   position: relative;
-
   display: inline-block;
 }
 
@@ -1946,15 +1919,13 @@ li .full-basket-price {
   color: #fff;
 }
 
-.pagination-items
-  a:hover:not(.icon-dir-left):not(.icon-dir-right):not(.active-pagination) {
+.pagination-items a:hover:not(.icon-dir-left):not(.icon-dir-right):not(.active-pagination) {
   color: #fff;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.pagination-items
-  a:active:not(.icon-dir-left):not(.icon-dir-right):not(.active-pagination) {
+.pagination-items a:active:not(.icon-dir-left):not(.icon-dir-right):not(.active-pagination) {
   color: #323232;
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
@@ -1969,7 +1940,6 @@ li .full-basket-price {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
-
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
 }
@@ -1980,7 +1950,6 @@ li .full-basket-price {
   right: 0;
   width: 8px;
   height: 12px;
-
   background-image: url("../img/icon-right-small-right.svg");
   background-repeat: no-repeat;
 }
@@ -2041,7 +2010,6 @@ li .full-basket-price {
 }
 
 .passive-catalog {
-  margin-right: 15px;
   padding: 7px 13px;
 }
 
