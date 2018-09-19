@@ -1232,8 +1232,7 @@ body {
 
 .map {
   position: relative;
-  margin-left: -27px;
-  margin-right: -27px;
+  left: -27px;
 }
 
 .map-feedback {
