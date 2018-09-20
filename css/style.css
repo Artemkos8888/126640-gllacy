@@ -1232,7 +1232,10 @@ body {
 
 .map {
   position: relative;
-  left: -27px;
+  max-width: 1200px;
+  min-width: 1146px;
+  margin: 0 auto;
+  margin-bottom: 29px;
 }
 
 .map-feedback {
@@ -2300,11 +2303,13 @@ li .full-basket-price {
 .map-img {
   position: relative;
   z-index: 50;
+  width: 100%;
 }
 
 .map-interact {
   position: absolute;
   z-index: 60;
+  width: 100%;
 }
 
 .catalog-taste-fillers li {
