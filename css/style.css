@@ -13,6 +13,13 @@ body {
   margin: 0 auto;
 }
 
+.site-wrapper-catalog {
+  width: 1200px;
+  background-image: url(../img/backlight.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
 .container {
   width: 1146px;
   margin: 0 auto;
