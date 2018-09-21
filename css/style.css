@@ -9,14 +9,14 @@ body {
   background-color: #849d8f;
 }
 
-.site-wrapper {
-  margin: 0 auto;
-}
-
-.site-wrapper-catalog {
+.body-catalog {
   background-image: url(../img/backlight.png);
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+}
+
+.site-wrapper {
+  margin: 0 auto;
 }
 
 .container {
